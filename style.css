@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* headeing */
+.banner {
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(6, 20, 143, 0.3), rgba(0, 0, 0, 0.3)),
+    url(img/banner1.jfif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.iconWrap {
+  margin: auto;
+  height: 10rem;
+  width: 10rem;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.iconWrap img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  /* position: absolute; */
+  transform: translateY(85%);
+  border: 10px solid rgba(6, 20, 143, 0.3);
+  animation-name: borderAnimate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.iconWrap h1 {
+  transform: translateY(9rem);
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+}
+
+.iconWrap h4 {
+  transform: translateY(9rem);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(35, 41, 95);
+}
+
+.banner_btn {
+  justify-content: center;
+  display: flex;
+  transform: translateY(9rem);
+}
+
+.banner_btn button {
+  margin: 1%;
+  min-width: 10%;
+  /* height: 40px; */
+  border: none;
+  background-color: #fff;
+  color: rgb(35, 41, 95);
+  box-shadow: 2px 2px 24px -3px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  box-shadow: 2px 2px 24px -3px rgba(0, 0, 0, 0.1);
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px solid rgba(211, 211, 211, 0.281);
+}
+
+.address {
+  text-align: center;
+}
+
+h3 {
+  color: rgba(6, 20, 143);
+}
+
+.profile p,
+.career p,
+.personal_skill ul,
+.hobbies p {
+  font-family: "Times New Roman", Times, serif;
+  border-left: 4px solid rgba(6, 20, 143);
+  padding: 2%;
+  background-color: lightgray;
+}
+
+.personal_Data table {
+  width: 50%;
+  border: 0;
+}
+.personal_Data tr td:nth-child(odd){
+  font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+  .personal_Data table{
+    width: 100%;
+  }
+  
+}
+table {
+  width: 100%;
+  border: 0;
+}
+
+table td {
+  padding: 1%;
+}
+.personal_Data table tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.education span {
+  margin-left: 3%;
+  font-size: small;
+}
+.personal_skill ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.personal_skill ul li {
+  margin-left: 3%;
+}
+
+.reference_wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer {
+  min-height: 25vh;
+  background: linear-gradient(0deg, rgba(6, 20, 143, 0.3), rgba(0, 0, 0, 0.3)),
+    url(img/banner1.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer h4 {
+  width: 100%;
+}
+
+/* form */
